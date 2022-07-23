@@ -1,0 +1,223 @@
+body {
+  background-image: url(/week3_template/assets/images/background.png);
+  background-size: cover;
+}
+h1,
+h2,
+h3,
+p {
+  color: #fff;
+}
+.contact-header {
+  color: #fff;
+  background-color: #09131b;
+  font-family: "Roboto", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  width: 473px;
+  height: 27px;
+  left: 116px;
+  top: 19px;
+  padding-left: 100px;
+  padding-right: 1000px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.social-header {
+  color: #fff;
+  background-color: #09131b;
+  font-family: "Roboto", sans-serif;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  position: absolute;
+  width: 247px;
+  height: 20px;
+  left: 1566px;
+  top: 22px;
+}
+.logo {
+  position: absolute;
+  width: 188px;
+  height: 45px;
+  left: 110px;
+  top: 98px;
+
+  font-family: "Righteous", cursive;
+  color: #fff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 25px;
+}
+p.menu {
+  position: absolute;
+  width: 492px;
+  height: 20px;
+  left: 1237px;
+  top: 111px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 120%;
+  text-align: center;
+  text-transform: uppercase;
+}
+h1 {
+  position: absolute;
+  left: 680px;
+  top: 221px;
+  font-family: "Arsenal", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 45px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+h2 {
+  position: absolute;
+  width: 599px;
+  height: 181px;
+  left: 601px;
+  top: 118px;
+  font-family: "Arsenal", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 144px;
+  line-height: 181px;
+  text-transform: uppercase;
+}
+h3 {
+  position: absolute;
+  left: 758px;
+  top: 410px;
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+}
+#searchbar {
+  position: absolute;
+  width: 573px;
+  height: 76px;
+  left: 611px;
+  top: 492px;
+}
+#features {
+  position: absolute;
+  width: 1348px;
+  height: 191px;
+  left: 321px;
+  top: 698px;
+}
+p.welcometext1 {
+  position: absolute;
+  width: 549px;
+  height: 139px;
+  left: 322px;
+  top: 1004px;
+  font-family: "Arsenal", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 60px;
+}
+p.welcometext2 {
+  position: absolute;
+  width: 538px;
+  height: 113px;
+  left: 1009px;
+  top: 1054px;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 170%;
+}
+p.tabs {
+  position: absolute;
+  width: 481px;
+  height: 19px;
+  left: 725px;
+  top: 1387px;
+
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  word-spacing: 2.5em;
+  text-align: center;
+}
+.offers {
+  position: absolute;
+  width: 1401px;
+  height: 896px;
+  top: 1423px;
+}
+#offer1 {
+  position: absolute;
+  left: 219px;
+  right: 1341px;
+}
+#offer2 {
+  position: absolute;
+  left: 576px;
+  right: 984px;
+}
+#offer3 {
+  position: absolute;
+  left: 930px;
+  right: 630px;
+}
+#offer4 {
+  position: absolute;
+  left: 1300px;
+  right: 260px;
+}
+.btn {
+  position: absolute;
+  width: 151px;
+  height: 45px;
+  left: 899px;
+  top: 2224px;
+}
+.quote {
+  box-sizing: border-box;
+
+  position: absolute;
+  left: 483px;
+  top: 2500px;
+}
+.comment {
+  position: absolute;
+  width: 829px;
+  height: 193px;
+  left: 682px;
+  top: 2445px;
+
+  font-family: "Arsenal", sans-serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 170%;
+}
+.logo:hover {
+  background: dodgerblue;
+  text-decoration: underline;
+}
+.menu:focus {
+  background: red;
+}
+
+.btn:active {
+  color: #0000d0;
+  padding: 2px;
+}
