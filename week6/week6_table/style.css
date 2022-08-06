@@ -1,0 +1,52 @@
+.container {
+  height: 60vh;
+  width: 60vw;
+  padding: 10px;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "mainh mainh aside"
+    "main1 main2 aside"
+    "main3 main3 aside"
+    "footer footer footer";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 50px repeat(3, 1fr) 20%;
+}
+.header {
+  grid-area: header;
+  text-align: center;
+  background-color: rgb(199, 199, 199);
+}
+.mainh {
+  grid-area: mainh;
+  text-align: center;
+}
+
+.main1 {
+  grid-area: main1;
+  text-align: center;
+  margin: 30px;
+  background-color: rgb(143, 104, 67);
+}
+.main2 {
+  grid-area: main2;
+  margin: 30px;
+  text-align: center;
+  background-color: rgb(143, 104, 67);
+}
+.main3 {
+  grid-area: main3;
+  align-self: stretch;
+  margin: 30px;
+  background-color: rgb(143, 104, 67);
+  text-align: center;
+}
+.aside {
+  grid-area: aside;
+  background-color: rgb(142, 201, 178);
+  text-align: center;
+}
+.footer {
+  grid-area: footer;
+  background-color: rgb(123, 126, 128);
+}
