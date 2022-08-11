@@ -28,8 +28,6 @@ a {
 }
 
 .grid-header {
-  border: 1px solid blue;
-
   display: grid;
   grid-template-columns: 120px 1fr 1fr 120px;
   justify-items: stretch;
@@ -44,7 +42,6 @@ a {
 }
 
 .grid-intro {
-  border: 1px solid blue;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: rgba(236, 231, 228, 1);
@@ -64,7 +61,6 @@ p.intro {
   padding: 100px;
 }
 .grid-about {
-  border: 1px solid blue;
   display: grid;
   grid-template-columns: 429px 35% 1fr 429px;
   padding: 100px;
@@ -81,7 +77,6 @@ p.about {
   font-size: 16px;
 }
 .grid-image1 {
-  border: 1px solid blue;
   background: url(./assets/images/image1.png);
   display: grid;
   grid-template-columns: 3fr 1fr 60px;
@@ -100,7 +95,6 @@ p.image1 {
   color: rgba(100, 92, 85, 1);
 }
 .grid-heading-process {
-  border: 1px solid blue;
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr;
@@ -117,7 +111,6 @@ p.heading {
   color: rgba(27, 26, 26, 1);
 }
 .grid-process {
-  border: 1px solid blue;
   text-align: center;
   font-size: 16px;
   grid-gap: 60px;
@@ -136,7 +129,6 @@ p.heading {
   grid-column: 4/5;
 }
 .grid-image2 {
-  border: 1px solid blue;
   background: url(./assets/images/image2.png);
   display: grid;
   grid-template-columns: 3fr 1fr 60px;
@@ -155,8 +147,6 @@ p.image2 {
   color: rgba(100, 92, 85, 1);
 }
 .grid-customers {
-  border: 1px solid blue;
-
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: rgba(64, 62, 59, 1);
@@ -180,7 +170,6 @@ p.customers {
   padding: 100px;
 }
 .grid-image3 {
-  border: 1px solid blue;
   background: url(./assets/images/image3.png);
   display: grid;
   grid-template-columns: 60px 3fr 1fr;
@@ -200,10 +189,44 @@ p.image3 {
 }
 .grid-projects {
   border: 1px solid blue;
-
+  padding-left: 136px;
+  padding-right: 136px;
+  background-color: #f7f7f7;
   display: grid;
-  grid-template-columns: 136px repeat(3, 1fr) 136px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr;
 }
+.projects-text {
+  border: 1px solid blue;
+  color: rgba(27, 26, 26, 1);
+  grid-area: 1/1/2/4;
+}
+h2.projects {
+  font-size: 39px;
+}
+p.projects {
+  font-size: 24px;
+}
+.projects-pics {
+  border: 1px solid blue;
+}
+.project1 {
+  width: 379px;
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.project2 {
+  width: 379px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+.project3 {
+  width: 379px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
 .grid-team {
   border: 1px solid blue;
 
