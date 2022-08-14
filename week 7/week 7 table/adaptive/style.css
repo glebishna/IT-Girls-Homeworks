@@ -1,0 +1,143 @@
+.grid-container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: small;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 13% 3fr 1.5fr;
+}
+@media screen and (max-width: 500px) {
+  .grid-container {
+    display: grid;
+  }
+  .grid-header {
+  }
+  .grid-main {
+  }
+  .mainheading {
+  }
+
+  .grid-footer {
+  }
+  .aside {
+  }
+  .main1 {
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .grid-container {
+  }
+  .grid-header {
+  }
+  .grid-main {
+  }
+
+  .grid-footer {
+  }
+}
+@media screen and (min-width: 801px) {
+  .grid-container {
+  }
+  .grid-header {
+  }
+  .grid-main {
+  }
+  .aside {
+  }
+  .grid-footer {
+  }
+}
+.grid-header {
+  height: 100%;
+  text-align: center;
+  background-color: rgb(199, 199, 199);
+}
+.grid-main {
+  background-color: rgb(194, 169, 199);
+  display: grid;
+  grid-template-columns: 1fr 1fr 35%;
+  grid-template-rows: 1fr 2fr;
+  grid-template-areas:
+    "mainh mainh aside"
+    "main1 main2 aside"
+    "main3 main3 aside";
+}
+
+.mainheading {
+  grid-area: mainh;
+  text-align: center;
+}
+
+.main1 {
+  height: 10vh;
+  width: 20vw;
+  grid-area: main1;
+  text-align: center;
+  margin: 15px;
+  background-color: rgb(143, 104, 67);
+}
+.main2 {
+  height: 10vh;
+  width: 20vw;
+  grid-area: main2;
+  margin: 15px;
+  text-align: center;
+  background-color: rgb(143, 104, 67);
+}
+.main3 {
+  height: 10vh;
+  width: 40vw;
+  grid-area: main3;
+  align-self: stretch;
+  margin: 15px;
+  background-color: rgb(143, 104, 67);
+  text-align: center;
+}
+.aside {
+  grid-area: aside;
+  background-color: rgb(142, 201, 178);
+  text-align: center;
+}
+.grid-footer {
+  font-size: small;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "footer1 footer2 footer3 footer4";
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(63, 59, 59);
+}
+
+.footer1 {
+  height: 10vh;
+  width: 20vw;
+  grid-area: footer1;
+  background-color: rgb(226, 226, 173);
+  margin: 15px;
+}
+.footer2 {
+  height: 10vh;
+  width: 20vw;
+  grid-area: footer2;
+  background-color: rgb(226, 226, 173);
+  margin: 15px;
+}
+.footer3 {
+  height: 10vh;
+  width: 20vw;
+  grid-area: footer3;
+  background-color: rgb(226, 226, 173);
+  margin: 15px;
+}
+.footer4 {
+  height: 10vh;
+  width: 20vw;
+  grid-area: footer4;
+  background-color: rgb(226, 226, 173);
+  margin: 15px;
+}
