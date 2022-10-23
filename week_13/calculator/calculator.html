@@ -9,34 +9,76 @@
 
   <body>
     <h1>Calculator JS</h1>
-    <button onClick="plus()">+</button>
-    <button onClick="minus()">-</button>
-    <button onClick="multiply()">*</button>
-    <button onClick="divide()">/</button>
-
+    <div>
+      <div>
+        <label>Какое первое число?</label>
+        <input type="number" id="number_1" />
+        <label>Какое второе число?</label>
+        <input type="number" id="number_2" />
+      </div>
+      <div>
+        <button onclick="clickOnPlusBtn()" id="plusbtn">+</button>
+        <button onclick="clickOnMinusBtn()" id="minusbtn">-</button>
+        <button onclick="clickOnMultiplyBtn()" id="multiplybtn">*</button>
+        <button onclick="clickOnDivideBtn()" id="dividebtn">/</button>
+      </div>
+      <div>
+        <input type="text" placeholder="Результат" id="results"></input>
+      </div>
+    </div>
     <script>
-      function plus() {
-        let a = prompt("Первое число?", "");
-        let b = prompt("Второе число?", "");
-        alert(+a + +b);
+      const plusbtn = document.getElementById('plusbtn');
+      const minusbtn = document.getElementById('minusbtn');
+      const multiplybtn = document.getElementById('multiplybtn');
+      const dividebtn = document.getElementById('dividebtn');
+
+      function clickOnPlusBtn() {
+        let input_1 = document.getElementById('number_1');
+        let input_2 = document.getElementById('number_2');
+
+        let number_1 = Number(input_1.value);
+        let number_2 = Number(input_2.value);
+
+        let result = number_1 + number_2;
+        document.getElementById("results").value = result;
+            console.log(result);
       }
 
-      function minus() {
-        let a = prompt("Первое число?", "");
-        let b = prompt("Второе число?", "");
-        alert(a - b);
+      function clickOnMinusBtn() {
+        let input_1 = document.getElementById('number_1');
+        let input_2 = document.getElementById('number_2');
+
+        let number_1 = Number(input_1.value);
+        let number_2 = Number(input_2.value);
+
+        let result = number_1 - number_2;
+        document.getElementById("results").value = result;
+            console.log(result);
       }
 
-      function multiply() {
-        let a = prompt("Первое число?", "");
-        let b = prompt("Второе число?", "");
-        alert(a * b);
+      function clickOnMultiplyBtn() {
+        let input_1 = document.getElementById('number_1');
+        let input_2 = document.getElementById('number_2');
+
+        let number_1 = Number(input_1.value);
+        let number_2 = Number(input_2.value);
+
+        let result = number_1 * number_2;
+        document.getElementById("results").value = result;
+            console.log(result);
       }
 
-      function divide() {
-        let a = prompt("Первое число?", "");
-        let b = prompt("Второе число?", "");
-        alert(a / b);
+      function clickOnDivideBtn() {
+        let input_1 = document.getElementById('number_1');
+        let input_2 = document.getElementById('number_2');
+
+        let number_1 = Number(input_1.value);
+        let number_2 = Number(input_2.value);
+
+        let result = number_1 / number_2;
+
+        document.getElementById("results").value = result;
+            console.log(result);
       }
     </script>
   </body>
