@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Colour change</title>
+    <style>
+      .itemtochange {
+        width: 700px;
+        height: 200px;
+        background-color: mediumseagreen;
+        margin-bottom: 20px;
+        font: normal bold 40px Verdana serif;
+        color: whitesmoke;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <div class="itemtochange" onClick="changeColor();">Тык-тык</div>
+      <div class="itemtochange" onClick="changeColor();">Нажми!</div>
+    </div>
+
+    <script>
+      function changeColor() {
+        document
+          .querySelectorAll(".itemtochange")
+          .forEach((func) => (func.style.backgroundColor = "rebeccapurple"));
+      }
+    </script>
+  </body>
+</html>
