@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Slide Gallery</title>
+    <style>
+      .wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        margin: 0px, auto;
+        padding: 30px;
+        align-items: center;
+      }
+      h1 {
+        text-align: center;
+        color: rgb(126, 126, 126);
+      }
+      .arrow {
+        width: 40px;
+        height: 40px;
+      }
+      #pic2,
+      #pic3 {
+        display: none;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Руанский собор Клода Моне</h1>
+    <div class="wrapper">
+      <img
+        src="./images/left.png"
+        onClick="changeToPrevPic()"
+        class="arrow"
+        alt="bttn"
+      />
+      <img src="./images/cathedral_1.jpg" id="pic1" alt="cathedral1" /><img
+        src="./images/cathedral_2.jpg"
+        id="pic2"
+        alt="cathedral2"
+      />
+      <img src="./images/cathedral_3.jpg" id="pic3" alt="cathedral3" />
+      <img
+        src="./images/right.png"
+        onClick="changeToNextPic()"
+        class="arrow"
+        alt="btn"
+      />
+    </div>
+    <script>
+      function changeToNextPic() {
+        let pic1 = document.getElementById("pic1");
+        pic1.src = "./images/cathedral_2.jpg";
+        console.log(pic1.src);
+      }
+
+      function changeToPrevPic() {
+        let pic1 = document.getElementById("pic1");
+        pic1.src = "./images/cathedral_3.jpg";
+        console.log(pic1.src);
+      }
+    </script>
+  </body>
+</html>
