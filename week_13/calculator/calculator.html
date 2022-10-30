@@ -76,10 +76,13 @@
         let number_2 = Number(input_2.value);
 
         let result = number_1 / number_2;
-
-        document.getElementById("results").value = result;
+        if (input_2.value == 0) {
+          alert('На ноль делить нельзя!');
+        } else {
+          document.getElementById("results").value = result;
             console.log(result);
       }
+    }
     </script>
   </body>
 </html>
