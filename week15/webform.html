@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="./webform.css" />
+  </head>
+  <body>
+    <div>
+      <img src="./img/duolingologo.png" alt="logo" />
+    </div>
+    <form>
+      <div class="container">
+        <h1>Давай узнаем друг друга лучше!</h1>
+        <p>Несколько вопросов перед тем, как окунуться в новые знания :)</p>
+        <div>
+          <label for="name">Как тебя зовут?</label>
+          <input type="text" placeholder="Настоящее имя" id="userName" />
+        </div>
+        <div>
+          <label for="age">Сколько тебе лет?</label>
+          <input type="number" placeholder="Укажи возраст" id="userAge" />
+        </div>
+        <div>
+          <label for="mothertongue">Твой родной язык</label>
+          <input type="text" placeholder="Укажи родной язык" id="firstLang" />
+        </div>
+        <div>
+          <label for="newlanguage">Какой язык хочешь учить?</label>
+          <input type="text" placeholder="Укажи язык" id="newLang" />
+        </div>
+        <div>
+          <label for="timespent">Сколько минут в день готов тратить?</label>
+          <input placeholder="Укажи число минут" id="timeStudy" />
+        </div>
+        <div id="errorMessage"></div>
+        <div>
+          <p>
+            Поставив галочку, ты соглашаешься передать нам свои личные данные.
+          </p>
+          <a href="#">Узнать больше о правилах и конфиденциальности</a>.
+        <div>
+          <label>
+            <input type="checkbox" checked="checked" />Даю согласие!</label
+          >
+        </div>
+      </div>
+    </form>
+    <button type="submit" class="signup_btn" id="registration" onclick="checkAnswers();">
+      Зарегистрироваться и начать!
+    </button>
+    <script src="./webform.js"></script>
+  </body>
+</html>
